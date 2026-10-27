@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Cars {
 
-    public static void main(String[] args){
-
-    }
-
+String make;
+String model;
+int year;
+int mileage;
 
 }
