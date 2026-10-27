@@ -14,11 +14,14 @@ public class Main {
         car2.year = 2021;
         car2.mileage = 62500;
 
-        displayCars(car1, car2);
+        displayCar(car1);
+        System.out.println();
+        displayCar(car2);
     }
-    public static void displayCars(Cars car1, Cars car2){
-        System.out.println("Car 1: Make: " + car1.make + ", Model: " + car1.model + ", Year: " + car1.year + ", Mileage: " + car1.mileage);
-        System.out.println("Car 2: Make: " + car2.make + ", Model: " + car2.model + ", Year: " + car2.year + ", Mileage: " + car2.mileage);
-
+    public static void displayCar(Cars car) {
+        System.out.println("Make: " + car.make);
+        System.out.println("Model: " + car.model);
+        System.out.println("Year: " + car.year);
+        System.out.println("Mileage: " + car.mileage);
     }
 }
