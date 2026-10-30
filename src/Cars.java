@@ -25,4 +25,7 @@ public class Cars {
         System.out.println("Year: " + year);
         System.out.println("Mileage: " + mileage);
     }
+    public void drive(int distance){
+        mileage = mileage + distance;
+    }
 }
