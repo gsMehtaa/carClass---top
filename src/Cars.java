@@ -9,6 +9,8 @@ public class Cars {
     int year;
     int mileage;
 
+    static int totalCars = 0;
+
 //CAR CONSTRUCTOR
 
     public Cars(String make, String model, int year, int mileage){
@@ -17,6 +19,7 @@ public class Cars {
         this.model = model;
         this.year = year;
         this.mileage = mileage;
+        totalCars++;
 
     }
     public void displayInfo() {

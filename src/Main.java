@@ -11,6 +11,7 @@ public class Main {
        Cars car2 = new Cars("Toyota", "RAV", 2021, 34500);
        car2.displayInfo();
 
+        System.out.println("Total cars: " + Cars.totalCars);
 
     }
 
