@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Cars {
 
-    String make;
-    String model;
-    int year;
-    int mileage;
+    private String make;
+    private String model;
+    private int year;
+    private int mileage;
 
     static int totalCars = 0;
 
@@ -29,6 +29,14 @@ public class Cars {
         System.out.println("Mileage: " + mileage);
     }
     public void drive(int distance){
-        mileage = mileage + distance;
+        if(mileage >= 0){
+            mileage = mileage + distance;
+        }
+        else{
+            System.out.println("CANT HAVE A NEGATIVE MILEAGE");
+        }
+    }
+    public int getMileage(){
+        return mileage;
     }
 }
