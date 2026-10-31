@@ -29,7 +29,7 @@ public class Cars {
         System.out.println("Mileage: " + mileage);
     }
     public void drive(int distance){
-        if(mileage >= 0){
+        if(distance >= 0){
             mileage = mileage + distance;
         }
         else{
